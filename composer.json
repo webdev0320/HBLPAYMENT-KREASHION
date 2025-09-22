@@ -1,0 +1,21 @@
+{
+  "name": "kreashion/hblpay",
+  "description": "HBLPay Integration for Laravel",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Kreashion\\HBLPay\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kreashion\\HBLPay\\HBLPayServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": ">=8.0"
+  }
+}
