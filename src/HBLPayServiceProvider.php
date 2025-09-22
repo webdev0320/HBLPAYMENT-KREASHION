@@ -17,6 +17,5 @@ class HBLPayServiceProvider extends ServiceProvider
             __DIR__.'/../config/hblpay.php' => config_path('hblpay.php'),
         ], 'config');
 
-        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
     }
 }
