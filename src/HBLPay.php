@@ -97,8 +97,13 @@ class HBLPay
 
     public function callAPI($method, $url, $data)
     {
-        $is_live   = 'no';
-        $use_proxy = 'no';
+        $is_live = 'no';        
+        $env = config('hblpay.env');
+        if ($env === null || $env === 'sandbox') {
+            $is_live = 'no';
+        } else {
+            $is_live = 'yes';
+        }
         $curl      = curl_init();
 
         switch ($method) {
