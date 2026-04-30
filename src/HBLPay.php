@@ -104,6 +104,7 @@ class HBLPay
         } else {
             $is_live = 'yes';
         }
+        $use_proxy = 'no';
         $curl      = curl_init();
 
         switch ($method) {
